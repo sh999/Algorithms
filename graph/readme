@@ -1,3 +1,10 @@
 Basic graph implementation in C
 Based on http://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)Graphs.html
 
+Comparison of data structure representation of graphs
+Adjacency matrix
+	n = # of nodes
+	O(n) for enumerating outedges
+		Enumerating outedges is a similar problem to finding neighbors to a vertex, which is a crucial component in graph traversals. Adjacency list is better for this if the graph is not fully dense.
+	O(n^2) space
+Adjacency list
